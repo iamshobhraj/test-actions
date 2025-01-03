@@ -8,4 +8,4 @@ jobs:
   test-reusable-workflow:
     uses: iamshobhraj/.github/.github/workflows/community-contribution-label.yml@main
     with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
