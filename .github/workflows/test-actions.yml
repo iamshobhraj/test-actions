@@ -7,5 +7,3 @@ on:
 jobs:
   test-reusable-workflow:
     uses: iamshobhraj/.github/.github/workflows/community-contribution-label.yml@main
-    secrets:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
