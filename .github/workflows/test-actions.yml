@@ -5,7 +5,10 @@ on:
     types: [assigned, unassigned]
 
 jobs:
-  test-reusable-workflow:
-    uses: iamshobhraj/.github/.github/workflows/community-contribution-label.yml@main
-    with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+  main-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Community Contribution Label
+        uses: iamshobhraj/.github/.github/workflows/community-contribution-label.yml@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
