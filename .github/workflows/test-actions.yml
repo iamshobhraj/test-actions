@@ -23,6 +23,6 @@ jobs:
           pip install requests
 
       - name: Run shared action
-        uses: iamshobhraj/.github/workflows/community-contribution-label.yml@main
+        uses: iamshobhraj/.github/.github/workflows/community-contribution-label.yml@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
