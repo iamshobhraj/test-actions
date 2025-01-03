@@ -5,12 +5,13 @@ on:
     types: [assigned, unassigned]
 
 jobs:
-  test:
+  test-reusable-workflow:
     uses: iamshobhraj/.github/.github/workflows/community-contribution-label.yml@main
     with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    runs-on: ubuntu-latest
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+  test-steps:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
