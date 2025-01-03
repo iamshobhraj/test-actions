@@ -5,10 +5,7 @@ on:
     types: [assigned, unassigned]
 
 jobs:
-  main-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Community Contribution Label
-        uses: iamshobhraj/.github/.github/workflows/community-contribution-label.yml@main
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+  call-label-action:
+    uses: iamshobhraj/.github/.github/workflows/community-contribution-label.yml@main
+    with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
