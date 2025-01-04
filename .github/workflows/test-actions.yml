@@ -7,5 +7,5 @@ on:
 jobs:
   call-label-action:
     uses: iamshobhraj/.github/.github/workflows/community-contribution-label.yml@main
-    with:
-        github_token: ${{ github.token }}
+    secrets:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
